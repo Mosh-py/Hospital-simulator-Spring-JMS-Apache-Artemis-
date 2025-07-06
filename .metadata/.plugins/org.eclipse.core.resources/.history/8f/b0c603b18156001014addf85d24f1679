@@ -1,0 +1,17 @@
+package org.hospital.model;
+
+import java.util.Date;
+
+import lombok.Data;
+
+@Data
+public class Patient {
+
+	private String firstName;
+	private String lastName;
+	private int age;
+	private boolean ourMember;
+	private String gender;
+	private String address;
+	private long time = new Date().getTime();
+}

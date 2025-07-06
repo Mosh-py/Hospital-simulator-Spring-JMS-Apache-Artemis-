@@ -1,0 +1,15 @@
+spring:
+  artemis:
+    broker-url: tcp://0.0.0.0:61616 
+    mode: native
+    password: admin
+    user: admin 
+  mail:
+    password: njik zyhk jqfz onva 
+    username: adagejem@gmail.com
+#app mode
+
+app:
+  patient-Queue: patientQueue
+  notification-Queue: notificationQueue
+

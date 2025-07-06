@@ -1,0 +1,39 @@
+package org.hospital.service;
+
+import org.hospital.model.BrokerListener;
+import org.hospital.model.Patient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.stereotype.Service;
+
+@Service
+public class PatientConsumerService {
+
+	private JmsTemplate jmsTemplate;
+	
+	private final String orderQueue = BrokerListener.patientQueue;
+	
+	private final Logger logger = LoggerFactory.getLogger(PatientConsumerService.class);
+	@JmsListener(destination = BrokerListener.patientQueue)
+	private void consumingLowPriorityPatient(Patient patient) {
+		logger.info("Preparing Triage for Low Priority Patient " + patient.getFirstName());
+		
+		processTriageForLowPriorityPatient(patient);
+	}
+	
+	public void processTriageForLowPriorityPatient(Patient patient ) {
+		logger.info("Preparing Triage for Low Priority Patient " + patient.getFirstName());
+		try {
+			Thread.currentThread();
+			Thread.sleep(3000);	
+		} catch(InterruptedException e) {
+			throw new RuntimeException (" Something went wrong, we were interrupted");
+		}
+		
+		
+		
+		logger.info(" Successfully Prepared Triahe");
+	}
+}

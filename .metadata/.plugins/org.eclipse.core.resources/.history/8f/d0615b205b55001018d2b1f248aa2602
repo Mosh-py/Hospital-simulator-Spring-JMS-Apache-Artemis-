@@ -1,0 +1,23 @@
+package org.hospital.controller;
+
+import org.hospital.model.Patient;
+import org.hospital.service.PatientDetailSender;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import lombok.AllArgsConstructor;
+
+@RequestMapping("/api/patient")
+@AllArgsConstructor
+public class PatientController {
+
+	private final PatientDetailSender patientDetailSender;
+	@PostMapping
+	public ResponseEntity<String> processPAtient(@RequestBody Patient patient){
+		patientDetailSender.sendLowPriorityPatient(patient);
+		
+		return ResponseEntity.ok(" Patient details sent sucessfullly");
+	}
+}

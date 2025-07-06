@@ -1,0 +1,28 @@
+package org.hospital;
+
+import org.hospital.model.BrokerListener;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class SharedModuleServiceApplication {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println(" Hiii ");
+		ConfigurableApplicationContext context;
+		try {
+			context = SpringApplication.run(SharedModuleServiceApplication.class, args);
+			BrokerListener brok = context.getBean(BrokerListener.class);
+			System.out.println(brok.patientQueue);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	;
+	}
+
+}

@@ -1,0 +1,19 @@
+package org.hospital;
+
+import org.hospital.model.BrokerListener;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SharedModuleServiceApplication {
+
+	public static void main(String[] args) {
+		
+		System.out.println(BrokerListener.patientDestination);
+		System.out.println(" Hiii ")
+		SpringApplication.run(SharedModuleServiceApplication.class, args);
+		
+		
+	}
+
+}

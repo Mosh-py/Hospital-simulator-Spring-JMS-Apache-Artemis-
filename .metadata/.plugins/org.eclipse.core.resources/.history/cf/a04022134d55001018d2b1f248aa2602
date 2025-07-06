@@ -1,0 +1,14 @@
+package org.hospital;
+
+import org.apache.activemq.artemis.jms.client.ActiveMQConnection;
+import org.springframework.context.annotation.Configuration;
+
+import jakarta.jms.ConnectionFactory;
+
+@Configuration
+public class ArtemisConfig {
+
+	ConnectionFactory connectionFactory() {
+		ActiveMQConnection connection = new ActiveMqConnection
+	}
+}

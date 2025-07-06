@@ -1,0 +1,15 @@
+spring:
+  artemis:
+    broker-url: tcp://0.0.0.0:61616 
+    mode: native
+    password: admin
+    user: admin 
+#app mode
+
+app:
+  patientQueue: patientQueue
+  notificationQueue: notificationQueue
+
+#System Config
+server:
+  port: 8081

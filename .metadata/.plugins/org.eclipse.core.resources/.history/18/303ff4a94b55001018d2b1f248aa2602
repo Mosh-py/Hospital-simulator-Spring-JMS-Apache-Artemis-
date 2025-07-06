@@ -1,0 +1,20 @@
+package org.hospital.service;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service
+public class PatientDetailSender {
+
+	@Value("${spring.artemis.broker-url}")
+	private String url;
+	
+//	app:
+//		  patientQueue: patientQueue
+//		  notificationQueue: notificationQueue
+	@Value("${app.patientQueue}")
+	private String password;
+	@Value("{app.notificationQueue}")
+	private String user;
+	
+}

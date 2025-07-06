@@ -1,0 +1,44 @@
+package org.hospital.service;
+
+import java.util.Date;
+
+import org.hospital.model.Patient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.stereotype.Service;
+
+import lombok.AllArgsConstructor;
+
+@Service
+
+public class PatientDetailSender {
+
+	private final Logger logger = LoggerFactory.getLogger(PatientDetailSender.class);
+	
+	private final JmsTemplate jmsTemplate;
+	
+	public PatientDetailSender(JmsTemplate jmsTemplate) {
+		this.jmsTemplate = jmsTemplate;
+	}
+	@Value("${app.patientQueue}")
+	private String patientQueue;
+	
+	@Value("${app.notificationQueue}")
+	private String notificationQueue;
+//	app:
+//		  patientQueue: patientQueue
+//		  notificationQueue: notificationQueue
+		  
+	public void sendLowPriorityPatient(Patient patient){
+		
+		jmsTemplate.convertAndSend(patientQueue, patient, ( message)->{
+			message.setStringProperty("priority", "low");
+			message.setLongProperty("time", new Date().getTime());
+			return message;
+		});
+		
+		logger.info(" Successfully sent Low priority Details to whoever is in charge");
+	}
+}

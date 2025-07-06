@@ -1,0 +1,6 @@
+package org.hospital.configuration;
+
+public class ArtemisConfig {
+
+	
+}

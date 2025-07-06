@@ -1,0 +1,9 @@
+server:
+  port: 8082
+
+spring:
+  mail:
+    username: adagejem@gmail.com
+    password: njik zyhk jqfz onva 
+sever:
+  port: 8087;

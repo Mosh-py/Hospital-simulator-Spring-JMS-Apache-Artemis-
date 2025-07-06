@@ -1,0 +1,20 @@
+package org.hospital.service;
+
+import org.hospital.model.BrokerListener;
+import org.hospital.model.Patient;
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.stereotype.Service;
+
+@Service
+public class PatientConsumerService {
+
+	private JmsTemplate jmsTemplate;
+	
+	private final String orderQueue = BrokerListener.getnotificationQueue();
+	@JmsListener(destination = "orderQueue")
+	private void consumingLowPriorityPatient() {
+		
+		
+	}
+}

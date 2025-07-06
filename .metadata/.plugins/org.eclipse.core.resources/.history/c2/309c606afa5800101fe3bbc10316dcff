@@ -1,0 +1,16 @@
+package org.hospital.service;
+
+import org.hospital.model.BrokerListener;
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailSenderService {
+
+	
+	@JmsListener(destination = BrokerListener.notificationQueue)
+	public void sendEmail() {
+		
+	}
+
+}

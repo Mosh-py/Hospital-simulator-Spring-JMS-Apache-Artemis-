@@ -1,0 +1,24 @@
+package org.hospital.model;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
+
+//spring:
+//	  artemis:
+//	    broker-url: tcp://0.0.0.0:61616 
+//	    mode: native
+//	    password: admin
+//	    user: admin 
+//	#app mode
+//
+//	app:
+//	  patientQueue: patientQueue
+//	  notificationQueue: notificationQueue
+
+@Configuration
+public class BrokerListener {
+
+	@Value("${app.patientQueue}")
+	public  static String patientDestination ; 
+}

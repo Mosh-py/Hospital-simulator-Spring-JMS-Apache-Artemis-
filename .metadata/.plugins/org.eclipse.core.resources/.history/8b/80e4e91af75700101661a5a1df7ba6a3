@@ -1,0 +1,16 @@
+spring:
+  artemis:
+    broker-url: tcp://0.0.0.0:61616 
+    mode: native
+    password: admin
+    user: admin 
+  mail:
+    password: njik zyhk jqfz onva 
+		user: 
+#app mode
+
+app:
+  patient-Queue: patientQueue
+  notification-Queue: notificationQueue
+
+spring.mail.userm

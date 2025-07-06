@@ -1,0 +1,22 @@
+package org.hospital.service;
+
+import org.hospital.model.BrokerListener;
+import org.hospital.model.EmailDetails;
+import org.hospital.model.Patient;
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailSenderService {
+
+	
+	@JmsListener(destination = BrokerListener.notificationQueue)
+	public void sendEmail(Patient patient) {
+		EmailDetails details = new EmailDetails();
+		if (patient.isOurMember()) {
+			details.setSubject(" Patient Report recorded");
+			details.setMessageBody("Hi, Triage is being set for " + patient.getFullName());
+		}
+	}
+
+}

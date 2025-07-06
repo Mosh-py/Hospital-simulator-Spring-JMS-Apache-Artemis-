@@ -1,0 +1,13 @@
+package org.hospital.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("/api/order")
+public class PatientController {
+
+	@PostMapping
+	public ResponseEntity<String> processPAtient(){
+		
+	}
+}

@@ -1,0 +1,9 @@
+package org.hospital.model;
+
+public class Patient {
+
+	private String firstNae;
+	private String lastName;
+	
+	
+}

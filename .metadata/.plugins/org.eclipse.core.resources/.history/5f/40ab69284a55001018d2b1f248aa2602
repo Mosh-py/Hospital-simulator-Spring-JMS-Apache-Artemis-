@@ -1,0 +1,6 @@
+spring:
+  artemis:
+    broker-url: ampq://0.0.0.0:61616 
+    mode: native
+    password: admin
+    user: admin

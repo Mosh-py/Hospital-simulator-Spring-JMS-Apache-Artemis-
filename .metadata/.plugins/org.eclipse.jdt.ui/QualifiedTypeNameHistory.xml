@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.apache.activemq.artemis.jms.client.ActiveMQConnection"/>
+    <fullyQualifiedTypeName name="org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory"/>
+    <fullyQualifiedTypeName name="jakarta.jms.ConnectionFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer"/>
+    <fullyQualifiedTypeName name="org.springframework.jms.config.DefaultJmsListenerContainerFactory"/>
+    <fullyQualifiedTypeName name="ch.qos.logback.classic.pattern.MessageConverter"/>
+    <fullyQualifiedTypeName name="org.springframework.jms.support.converter.MappingJackson2MessageConverter"/>
+    <fullyQualifiedTypeName name="org.springframework.jms.support.converter.MessageType"/>
+    <fullyQualifiedTypeName name="org.springframework.jms.support.converter.MessageConverter"/>
+    <fullyQualifiedTypeName name="org.springframework.jms.core.MessagePostProcessor"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.hospital.service.PatientDetailSender"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.hospital.model.Patient"/>
+    <fullyQualifiedTypeName name="org.springframework.jms.core.JmsTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.context.properties.ConfigurationProperties"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.context.properties.ConfigurationPropertiesScan"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="org.springframework.jms.annotation.JmsListener"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
+    <fullyQualifiedTypeName name="org.hospital.model.BrokerListener"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.jackson.JsonComponent"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+</qualifiedTypeNameHistroy>

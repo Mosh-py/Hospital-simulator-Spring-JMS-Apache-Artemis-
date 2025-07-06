@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.hospital.service.SenderService&apos; to &apos;EmailSenderService&apos;&#x0A;- Original project: &apos;EmailSenderService&apos;&#x0A;- Original element: &apos;org.hospital.service.SenderService&apos;&#x0A;- Renamed element: &apos;org.hospital.service.EmailSenderService&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SenderService&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.hospital.service{SenderService.java[SenderService" matchStrategy="1" name="EmailSenderService" qualified="false" references="true" similarDeclarations="false" stamp="1751648544683" textual="false" version="1.0"/>
+</session>

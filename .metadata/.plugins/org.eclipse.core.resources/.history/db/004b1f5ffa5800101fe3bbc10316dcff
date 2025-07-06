@@ -1,0 +1,14 @@
+package org.hospital.service;
+
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailSenderService {
+
+	
+	@JmsListener
+	public void sendEmail() {
+		
+	}
+
